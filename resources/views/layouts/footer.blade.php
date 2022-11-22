@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="logo">
-                    <img src="assets/images/header-logo.png" alt="">
+                    <img src="{{ asset('images/header-logo.png')}}" alt="">
                 </div>
             </div>
             <div class="col-md-12">
@@ -60,6 +60,9 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
 {{--<script src="vendor/jquery/jquery.min.js"></script>--}}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.2/owl.carousel.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.2/owl.carousel.js"></script>
 
 {{--<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>--}}
 
