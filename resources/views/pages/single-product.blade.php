@@ -15,7 +15,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="product-slider">
-                        <div id="slider" class="flex-slider">
+                        <div id="slider" class="flexslider">
                             <ul class="slides">
                                 <li>
                                     <img src="{{ asset('images/big-01.jpg') }}"  alt=""/>
@@ -32,8 +32,7 @@
                                 <!-- items mirrored twice, total of 12 -->
                             </ul>
                         </div>
-
-                        <div id="carousel" class="flex-slider">
+                        <div id="carousel" class="flexslider">
                             <ul class="slides">
                                 <li>
 
