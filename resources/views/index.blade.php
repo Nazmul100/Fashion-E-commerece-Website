@@ -34,74 +34,18 @@
                             <h1>Featured Items</h1>
                         </div>
                     </div>
-                    <div class="col-md-12">
-                        <div class="owl-carousel owl-theme">
-                            <a href="single-product.html">
-                                <div class="featured-item">
-
-                                    <img src="{{asset ('images/item-01.jpg')}}" alt="Item 1">
-{{--                                    <img src="{{ asset ('/images/item-01') }}"  alt=""/>--}}
-                                    <h4>Proin vel ligula</h4>
-                                    <h6>$15.00</h6>
+                    <div class="row col-md-12">
+                            @foreach($products as $product)
+                                <div class="col-md-3">
+                                    <a href="{{ url ('/single-product') }}">
+                                        <div class="featured-item">
+                                            <img style="width: 250px; height: 250px" src="{{ asset ('images/'.$product->image)}}" alt="Item 9">
+                                            <h4>{{ $product->name }}</h4>
+                                            <h6>{{ $product->price }}</h6>
+                                        </div>
+                                    </a>
                                 </div>
-                            </a>
-                            <a href="single-product.html">
-                                <div class="featured-item">
-                                    <img src="{{ asset ('images/item-02.jpg')}}" alt="Item 2">
-                                    <h4>Erat odio rhoncus</h4>
-                                    <h6>$25.00</h6>
-                                </div>
-                            </a>
-                            <a href="single-product.html">
-                                <div class="featured-item">
-                                    <img src="{{ asset ('images/item-03.jpg')}}" alt="Item 3">
-                                    <h4>Integer vel turpis</h4>
-                                    <h6>$35.00</h6>
-                                </div>
-                            </a>
-                            <a href="single-product.html">
-                                <div class="featured-item">
-                                    <img src="{{ asset ('images/item-04.jpg')}}" alt="Item 4">
-                                    <h4>Sed purus quam</h4>
-                                    <h6>$45.00</h6>
-                                </div>
-                            </a>
-                            <a href="single-product.html">
-                                <div class="featured-item">
-                                    <img src="{{ asset ('images/item-05.jpg')}}" alt="Item 5">
-                                    <h4>Morbi aliquet</h4>
-                                    <h6>$55.00</h6>
-                                </div>
-                            </a>
-                            <a href="single-product.html">
-                                <div class="featured-item">
-                                    <img src="{{ asset ('images/item-05.jpg')}}" alt="Item 6">
-                                    <h4>Urna ac diam</h4>
-                                    <h6>$65.00</h6>
-                                </div>
-                            </a>
-                            <a href="single-product.html">
-                                <div class="featured-item">
-                                    <img src="{{ asset ('images/item-06.jpg')}}" alt="Item 7">
-                                    <h4>Proin eget imperdiet</h4>
-                                    <h6>$75.00</h6>
-                                </div>
-                            </a>
-                            <a href="single-product.html">
-                                <div class="featured-item">
-                                    <img src="{{ asset ('images/item-01.jpg')}}" alt="Item 8">
-                                    <h4>Nullam risus nisl</h4>
-                                    <h6>$85.00</h6>
-                                </div>
-                            </a>
-                            <a href="single-product.html">
-                                <div class="featured-item">
-                                    <img src="{{ asset ('images/item-02.jpg')}}" alt="Item 9">
-                                    <h4>Cras tempus</h4>
-                                    <h6>$95.00</h6>
-                                </div>
-                            </a>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
