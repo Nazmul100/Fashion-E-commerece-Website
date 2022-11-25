@@ -36,17 +36,17 @@
                             <ul class="slides">
                                 <li>
 
-                                    <img src="{{ asset('images/thumb-01.jpg') }}"  alt=""/>
+                                    <img src="{{ asset('images/thumb-01.jpg') }}" alt=""/>
 
                                 </li>
                                 <li>
-                                    <img src="{{ asset('images/thumb-02.jpg') }}"  alt=""/>
+                                    <img src="{{ asset('images/thumb-02.jpg') }}" alt=""/>
                                 </li>
                                 <li>
-                                    <img src="{{ asset('images/thumb-03.jpg') }}"  alt=""/>
+                                    <img src="{{ asset('images/thumb-03.jpg') }}" alt=""/>
                                 </li>
                                 <li>
-                                    <img src="{{ asset('images/thumb-04.jpg') }}"  alt=""/>
+                                    <img src="{{ asset('images/thumb-04.jpg') }}" alt=""/>
                                 </li>
                                 <!-- items mirrored twice, total of 12 -->
                             </ul>
@@ -98,7 +98,7 @@
                         <a href="single-product.html">
                             <div class="featured-item">
 
-                                <img src="{{asset ('images/item-01.jpg')}}" alt="Item 1">
+                                <img src="{{ asset ('images/item-01.jpg')}}" alt="Item 1">
                                 {{--                                    <img src="{{ asset ('/images/item-01') }}"  alt=""/>--}}
                                 <h4>Proin vel ligula</h4>
                                 <h6>$15.00</h6>

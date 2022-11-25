@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="{{ asset( 'css/fontawesome.css') }}">
     <link rel="stylesheet" href="{{ asset('css/tooplate-main.css') }}">
     <link rel="stylesheet" href="{{asset('css/owl.css')}}">
+    <link rel="stylesheet" href="{{asset('css/flex-slider.css')}}">
+
 
 </head>
 

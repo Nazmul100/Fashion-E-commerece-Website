@@ -76,6 +76,8 @@
 
 <script src="{{ asset('js/custom.js')}}"></script>
 <script src="{{ asset('js/owl.js')}}"></script>
+<script src="{{ asset('js/isotope.js') }}"></script>
+<script src="{{ asset('js/flex-slider.js') }}"></script>
 
 
 <script language = "text/Javascript">
