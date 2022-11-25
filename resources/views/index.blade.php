@@ -39,11 +39,16 @@
                                 <div class="col-md-3">
                                     <a href="{{ url ('/single-product') }}">
                                         <div class="featured-item">
-                                            <img style="width: 250px; height: 250px" src="{{ asset ('images/'.$product->image)}}" alt="Item 9">
+                                            <img style="width: 250px; height: 250px" src="{{ asset ('images/'.$product->image)}}" alt="Item">
                                             <h4>{{ $product->name }}</h4>
                                             <h6>{{ $product->price }}</h6>
                                         </div>
+                                        <form>
+                                            <input type="submit" class="btn btn-primary mt-3" value="Add To Cart" />
+                                        </form>
                                     </a>
+
+
                                 </div>
                         @endforeach
                     </div>
