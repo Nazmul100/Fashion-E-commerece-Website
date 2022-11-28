@@ -55,6 +55,71 @@
                         @endforeach
                     </div>
                 </div>
+
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-heading">
+                            <div class="line-dec"></div>
+                            <h1>Men Items</h1>
+                        </div>
+                    </div>
+                    <div class="row col-md-12">
+                        @foreach($men_products as $men)
+                            <div class="col-md-3">
+                                <a href="{{ url ('/single-product') }}">
+                                    <div class="featured-item text-center">
+                                        <img style="width: 250px; height: 250px"
+                                             src="{{ asset ('images/'.$men->image)}}" alt="Item">
+                                        <h4>{{ $men->name }}</h4>
+                                        @if ($men->sale_price)
+                                            <h5>{{ $men->sale_price }}</h5>
+                                            <h6 style="text-decoration: line-through">${{ $men->price }}</h6>
+                                        @endif
+                                        <form>
+                                            <input type="submit" class="btn btn-primary mt-3" value="Add To Cart"/>
+                                        </form>
+                                    </div>
+                                </a>
+                            </div>
+                        @endforeach
+                        <div style="text-align: center">
+                            <a href="" class="btn btn-primary mt-4">More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-heading">
+                            <div class="line-dec"></div>
+                            <h1>Women Items</h1>
+                        </div>
+                    </div>
+                    <div class="row col-md-12">
+                        @foreach($women_products as $women)
+                            <div class="col-md-3">
+                                <a href="{{ url ('/single-product') }}">
+                                    <div class="featured-item text-center">
+                                        <img style="width: 250px; height: 250px"
+                                             src="{{ asset ('images/'.$women->image)}}" alt="Item">
+                                        <h4>{{ $women->name }}</h4>
+                                        @if ($women->sale_price)
+                                            <h5>{{ $women->sale_price }}</h5>
+                                            <h6 style="text-decoration: line-through">${{ $women->price }}</h6>
+                                        @endif
+                                        <form>
+                                            <input type="submit" class="btn btn-primary mt-3" value="Add To Cart"/>
+                                        </form>
+                                    </div>
+                                </a>
+                            </div>
+                        @endforeach
+                        <div style="text-align: center">
+                            <a href="" class="btn btn-primary mt-4">More</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- Featred Ends Here -->
