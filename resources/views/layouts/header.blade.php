@@ -50,18 +50,18 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home
+                    <a class="nav-link" href="{{ url ('/') }}">Home
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="products.html">Products</a>
+                    <a class="nav-link" href="{{ url ('/product') }}">Products</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html">About Us</a>
+                    <a class="nav-link"  href="{{ url ('/about') }}">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Us</a>
+                    <a class="nav-link" href="{{ url ('/contact') }}">Contact Us</a>
                 </li>
             </ul>
         </div>
