@@ -29,6 +29,24 @@
                  </div>
              @endforeach
          </div>
+
+        <style type="text/css">
+            svg{
+                width: 20px;
+                height: 20px;
+            }
+            nav p {
+                display: none;
+            }
+            nav .flex a {
+                display: none;
+            }
+
+        </style>
+
+         <div class="text-center">
+         {{ $products->links() }}
+         </div>
      </div>
  </div>
 

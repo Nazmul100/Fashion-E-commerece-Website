@@ -15,7 +15,7 @@ class ProjectController extends Controller
         return view('index',['products' => $products ,'men_products' =>$men_products,'women_products' =>$women_products]);
     }
     public function product(){
-        $products = DB::table('products')->get();
+        $products = DB::table('products')->paginate(2);
         return view('pages.products',['products' => $products ]);
     }
 }
