@@ -14,13 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/',[ProjectController::class,'index']);
+Route::get('/', [ProjectController::class, 'index']);
 
 Route::get('/single-product', function () {
     return view('pages.single-product');
 });
 
-Route::get('/product',[ProjectController::class,'product']);
+Route::get('/product', [ProjectController::class, 'product']);
 Route::get('/contact', function () {
     return view('pages.contact');
 });
