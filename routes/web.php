@@ -28,3 +28,7 @@ Route::get('/contact', function () {
 Route::get('/about', function () {
     return view('pages.about');
 });
+
+Route::get('/newest', [ProjectController::class, 'newest'])->name('newest');
+Route::get('/lowest', [ProjectController::class, 'lowest'])->name('low');
+Route::get('/highest', [ProjectController::class, 'highest'])->name('high');

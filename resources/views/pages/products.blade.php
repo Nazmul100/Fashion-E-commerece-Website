@@ -15,10 +15,10 @@
             <div class="col-md-4 col-sm-12">
                 <div class="section-heading">
                     <div id="filters" class="button-group">
-                        <a href="{{ url ('/product')}}" data-filters="*">All Products</a>
-                        <button class="btn btn-primary" data-filters=".new">Newest</button>
-                        <button class="btn btn-primary" data-filters=".low">Low Price</button>
-                        <button class="btn btn-primary" data-filters=".high">High Price</button>
+                        <a  href="{{ url ('/product')}}" data-filters="*">All-Products</a>
+                        <a style="margin-left: 10px"  href="{{ url ('/newest')}}" data-filters=".new">Newest</a>
+                        <a style="margin-left: 10px" href="{{ url ('/lowest')}}" data-filters=".low">Low-Price</a>
+                        <a style="margin-left: 10px" href="{{ url ('/highest')}}" data-filters=".high">High-Price</a>
                     </div>
                 </div>
             </div>
