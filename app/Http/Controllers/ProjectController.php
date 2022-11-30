@@ -33,4 +33,19 @@ class ProjectController extends Controller
         $products = DB::table('products')->orderBy('sale_price','desc')->paginate(2);
         return view('pages.products',['products' => $products ]);
     }
+
+    public function men(){
+        $products = DB::table('products')->where('type','men')->paginate(2);
+        return view('pages.products',['products' => $products ]);
+    }
+
+    public function women(){
+
+        $products = DB::table('products')->where('type','women')->paginate(2);
+        return view('pages.products',['products' => $products ]);
+    }
+
+    public function cart(){
+        return view('pages.cart');
+    }
 }

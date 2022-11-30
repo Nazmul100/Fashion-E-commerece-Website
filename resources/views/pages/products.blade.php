@@ -9,16 +9,18 @@
                     <h1>All Products</h1>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-12">
+{{--            <div class="col-md-4 col-sm-12">--}}
 
-            </div>
-            <div class="col-md-4 col-sm-12">
+{{--            </div>--}}
+            <div class="col-md-8 col-sm-12">
                 <div class="section-heading">
                     <div id="filters" class="button-group">
                         <a  href="{{ url ('/product')}}" data-filters="*">All-Products</a>
                         <a style="margin-left: 10px"  href="{{ url ('/newest')}}" data-filters=".new">Newest</a>
                         <a style="margin-left: 10px" href="{{ url ('/lowest')}}" data-filters=".low">Low-Price</a>
                         <a style="margin-left: 10px" href="{{ url ('/highest')}}" data-filters=".high">High-Price</a>
+                        <a style="margin-left: 10px" href="{{ url ('/men')}}" data-filters=".men">Men</a>
+                        <a style="margin-left: 10px" href="{{ url ('/women')}}" data-filters=".women">Women</a>
                     </div>
                 </div>
             </div>
@@ -63,6 +65,7 @@
         <div class="text-center">
             {{ $products->links() }}
         </div>
+    </div>
     </div>
 
 @endsection

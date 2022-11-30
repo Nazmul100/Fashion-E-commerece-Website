@@ -32,3 +32,6 @@ Route::get('/about', function () {
 Route::get('/newest', [ProjectController::class, 'newest'])->name('newest');
 Route::get('/lowest', [ProjectController::class, 'lowest'])->name('low');
 Route::get('/highest', [ProjectController::class, 'highest'])->name('high');
+Route::get('/men', [ProjectController::class, 'men'])->name('men');
+Route::get('/women', [ProjectController::class, 'women'])->name('women');
+Route::get('/cart', [ProjectController::class, 'cart'])->name('cart');
