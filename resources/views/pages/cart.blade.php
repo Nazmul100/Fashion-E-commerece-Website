@@ -19,7 +19,7 @@
                     <img src="{{ asset('images/product-01.jpg') }}" alt="dummy_image">
                     <div>
                         <p> White Shirt</p>
-                        <small><span>$</span> White Shirt</small>
+                        <small><span>$</span> 99</small>
                         <br/>
                         <form>
                             <input type="submit" name="" class="remove-btn" value="Remove">
@@ -53,7 +53,7 @@
 
     <div class="checkout-container">
     <form>
-        <input type="submit" name="" class="btn-btn btn-primary checkout-btn" value="submit">
+        <input type="submit" name="" class="btn-btn btn-primary checkout-btn" value="checkout">
     </form>
     </div>
 
