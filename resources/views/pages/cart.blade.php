@@ -53,7 +53,7 @@
 
     <div class="checkout-container">
     <form>
-        <input type="submit" name="" class="btn-btn btn-primary checkout-btn" value="checkout">
+        <input type="submit" name="" class="btn checkout-btn" value="checkout">
     </form>
     </div>
 

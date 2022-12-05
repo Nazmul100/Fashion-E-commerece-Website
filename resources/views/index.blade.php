@@ -51,8 +51,14 @@
                                         <h5>{{ $product->sale_price }}</h5>
                                         <h6 style="text-decoration: line-through">${{ $product->price }}</h6>
                                     @endif
-                                    <form>
-                                        <input type="submit" class="btn btn-primary mt-3" value="Add To Cart"/>
+                                    <form action=" {{ route("add_to_cart") }}" method="POST">
+                                        <input type="hidden" name="id" value="{{ $product->id }}">
+                                        <input type="hidden" name="name" value="{{ $product->name }}">
+                                        <input type="hidden" name="image" value="{{ $product->image }}">
+                                        <input type="hidden" name="price" value="{{ $product->price }}">
+                                        <input type="hidden" name="quantity" value="1">
+                                        <input type="hidden" name="sale_price" value="{{ $product->sale_price }}">
+                                        <input type="submit" name="add_to_cart" class="btn btn-primary mt-3" value="Add To Cart"/>
                                     </form>
                                 </div>
                             </a>
@@ -81,8 +87,14 @@
                                         <h5>{{ $men->sale_price }}</h5>
                                         <h6 style="text-decoration: line-through">${{ $men->price }}</h6>
                                     @endif
-                                    <form>
-                                        <input type="submit" class="btn btn-primary mt-3" value="Add To Cart"/>
+                                    <form action=" {{ route("add_to_cart") }}" method="POST">
+                                        <input type="hidden" name="id" value="{{ $men->id }}">
+                                        <input type="hidden" name="name" value="{{ $men->name }}">
+                                        <input type="hidden" name="image" value="{{ $men->image }}">
+                                        <input type="hidden" name="price" value="{{ $men->price }}">
+                                        <input type="hidden" name="quantity" value="1">
+                                        <input type="hidden" name="sale_price" value="{{ $men->sale_price }}">
+                                        <input type="submit" name="add_to_cart" class="btn btn-primary mt-3" value="Add To Cart"/>
                                     </form>
                                 </div>
                             </a>
@@ -113,8 +125,14 @@
                                         <h5>{{ $women->sale_price }}</h5>
                                         <h6 style="text-decoration: line-through">${{ $women->price }}</h6>
                                     @endif
-                                    <form>
-                                        <input type="submit" class="btn btn-primary mt-3" value="Add To Cart"/>
+                                    <form action=" {{ route("add_to_cart") }}" method="POST">
+                                        <input type="hidden" name="id" value="{{ $women->id }}">
+                                        <input type="hidden" name="name" value="{{ $women->name }}">
+                                        <input type="hidden" name="image" value="{{ $women->image }}">
+                                        <input type="hidden" name="price" value="{{ $women->price }}">
+                                        <input type="hidden" name="quantity" value="1">
+                                        <input type="hidden" name="sale_price" value="{{ $women->sale_price }}">
+                                        <input type="submit" name="add_to_cart" class="btn btn-primary mt-3" value="Add To Cart"/>
                                     </form>
                                 </div>
                             </a>

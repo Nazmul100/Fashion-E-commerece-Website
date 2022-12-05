@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\CartController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -34,4 +35,8 @@ Route::get('/lowest', [ProjectController::class, 'lowest'])->name('low');
 Route::get('/highest', [ProjectController::class, 'highest'])->name('high');
 Route::get('/men', [ProjectController::class, 'men'])->name('men');
 Route::get('/women', [ProjectController::class, 'women'])->name('women');
-Route::get('/cart', [ProjectController::class, 'cart'])->name('cart');
+Route::get('/cart', [CartController::class, 'cart'])->name('cart');
+Route::post('/add_to_cart', [CartController::class, 'add_to_cart'])->name('add_to_cart');
+Route::get('/add_to_cart', function () {
+    return view('index');
+});
